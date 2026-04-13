@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Rahman",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arif.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied CSE together at BUET. Used to code all night and grab tea at TSC.",
+    "goal": 14,
+    "next_due_date": "2026-03-28"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@outlook.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["office", "team mate"],
+    "bio": "Works with me in the banking system team. Always helps debug production issues.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "tanvir.hossain@yahoo.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "fitness"],
+    "bio": "Workout partner. Keeps pushing me to stay consistent and not skip leg day.",
+    "goal": 10,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 4,
+    "name": "Farhana Ahmed",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "farhana.ahmed@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "We go way back to school days. Lost touch a bit after university.",
+    "goal": 14,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 5,
+    "name": "Imran Kabir",
+    "picture": "https://randomuser.me/api/portraits/men/15.jpg",
+    "email": "imran.kabir@protonmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["freelancing", "tech"],
+    "bio": "Met through a Django freelancing project. Great at backend architecture.",
+    "goal": 14,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 6,
+    "name": "Sadia Karim",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "sadia.karim@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["family friend"],
+    "bio": "Family friend who recently started learning piano. We share music often.",
+    "goal": 10,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 7,
+    "name": "Rakib Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "rakib.hasan@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["university", "football"],
+    "bio": "Used to play football every weekend during university. Haven’t caught up in a while.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 8,
+    "name": "Mehnaz Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/9.jpg",
+    "email": "mehnaz.sultana@gmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["music", "creative"],
+    "bio": "Met at a local music workshop. Shares amazing ambient and experimental tracks.",
+    "goal": 12,
+    "next_due_date": "2026-04-18"
+  }
+]
