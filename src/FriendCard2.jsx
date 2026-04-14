@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const FriendCard = ({friend}) => {
+const FriendCard2 = ({friend}) => {
   function colorDefiner(status){
     if(status ==="overdue"){
       return "bg-red-400";
@@ -13,7 +12,7 @@ const FriendCard = ({friend}) => {
   }
     return (
         <div >
-            <Link to={`/friend/${friend.id}`} className="card card-side bg-base-100 shadow-md p-4 items-center gap-4 flex flex-col justify-center">
+            <div className="card card-side bg-base-100 shadow-md p-4 items-center gap-4 flex flex-col justify-center">
 
   {/* Avatar */}
   <div className="avatar">
@@ -26,17 +25,18 @@ const FriendCard = ({friend}) => {
   <div className="flex flex-col text-center">
     <h2 className="font-bold text-[20px] ">{friend.name}</h2>
     <p className="text-sm text-gray-500 pb-3">{friend.days_since_contact} day ago</p>
-    <div className='flex gap-2 pb-3'>
+    <div className='flex gap-2 pb-3 justify-center '>
        {friend.tags.map((tag)=><div className="badge bg-green-300/40">{tag}</div>)}
     </div>
     <div>
       <p className={`badge rounded-2xl p-4 text-white ${colorDefiner(friend.status)}`}>{friend.status}</p>
+      <p className='text-gray-500'>{friend.bio}</p>
+      <p className='text-gray-500'>perfered:email</p>
     </div>
   </div>
 
-</Link>
+</div>
         </div>
     );
 };
-
-export default FriendCard;
+export default FriendCard2;
