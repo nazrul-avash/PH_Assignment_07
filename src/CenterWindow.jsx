@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Banner from './Banner';
 import StatusGrid from './StatusGrid';
 import AllFriends from './AllFriends';
@@ -9,7 +9,10 @@ const CenterWindow = () => {
         <div>
             <Banner></Banner>
             <StatusGrid></StatusGrid>
-            <AllFriends></AllFriends>  
+            <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>
+}>
+                <AllFriends></AllFriends> 
+            </Suspense> 
         </div>
     );
 };
