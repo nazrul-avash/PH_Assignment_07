@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SearchButton = () => {
+const SearchButton = ({setSearchKey, searchKey}) => {
     return (
         <div>
-            <label className="input">
+            <label className="input   mt-10">
   <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g
       strokeLinejoin="round"
@@ -16,7 +16,7 @@ const SearchButton = () => {
       <path d="m21 21-4.3-4.3"></path>
     </g>
   </svg>
-  <input type="search" required placeholder="Search" />
+  <input type="search" required placeholder="Search" value={searchKey} onChange={(e)=>setSearchKey(e.target.value)} />
 </label>
         </div>
     );

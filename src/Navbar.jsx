@@ -2,14 +2,14 @@ import React from 'react';
 import logo from './assets/logo.png';
 import { FaChartLine, FaHome } from 'react-icons/fa';
 import { RiTimeLine } from 'react-icons/ri';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl"><img src={logo}></img></a>
+    <Link to={"/"} className="btn btn-ghost text-xl"><img src={logo}></img></Link>
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-3 text-[#64748B] flex gap-3">
