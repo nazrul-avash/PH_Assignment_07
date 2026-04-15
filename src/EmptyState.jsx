@@ -1,8 +1,10 @@
 import React from 'react';
+import Timeline from './Timeline';
 
 const EmptyState = ({title,message}) => {
     return (
         <div>
+           
              <div className="flex flex-col items-center justify-center h-[400px] text-gray-500 text-center">
       <div className="text-6xl mb-4">🔍</div>
 
