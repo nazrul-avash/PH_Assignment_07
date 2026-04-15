@@ -7,6 +7,7 @@ import SearchButton from './SearchButton';
 import Sorting from './Sorting';
 import Filtering from './Filtering';
 import EmptyActivity from './EmptyActivity';
+import EmptyState from './EmptyState';
 
 const Timeline = () => {
     const {activityItems} = useContext(ActivityContext);
@@ -15,7 +16,7 @@ const Timeline = () => {
     const [searchKey, setSearchKey] = useState("");
     function doSorting(array){
         if(sorting === "Desc"){
-            return array.sort((a,b)=>new Date(b.time) - new Date(a.time));
+            return [...array].sort((a,b)=>new Date(b.time) - new Date(a.time));
         }
         else if(sorting === "Aesc"){
             return array.sort((a,b)=>new Date(a.time) - new Date(b.time));
@@ -36,6 +37,11 @@ const Timeline = () => {
  if(!activityItems || activityItems.length ===0){
         return <EmptyActivity></EmptyActivity>;
     }
+    const filteredData = setFilteredData();
+    if(!filteredData || filteredData.length === 0){
+        return <EmptyState  title="No activity found"
+        message="Try searching or changing filters."></EmptyState>;
+    }
     return (
         <div className='mt-10 mb-10'>
            <h1 className='text-4xl font-extrabold mb-4'>Timeline</h1>
@@ -46,7 +52,7 @@ const Timeline = () => {
            </div>
             <div className='mb-10'></div>
             {
-                setFilteredData().map((item)=><ActivityCard item={item}></ActivityCard>)
+                filteredData.map((item)=><ActivityCard item={item}></ActivityCard>)
             }
         </div>
     );
