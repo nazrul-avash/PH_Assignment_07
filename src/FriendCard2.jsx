@@ -11,7 +11,7 @@ const FriendCard2 = ({friend}) => {
     else return "bg-green-400";
   }
     return (
-        <div >
+        <div className='mb-2' >
             <div className="card card-side bg-base-100 shadow-md p-4 items-center gap-4 flex flex-col justify-center">
 
   {/* Avatar */}
