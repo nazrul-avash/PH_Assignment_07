@@ -25,7 +25,7 @@ Get meaningful insights from your social data — who you've been keeping in tou
 
 | Technology | Purpose |
 |---|---|
-| **React.js / Next.js** | UI framework & server-side rendering |
+| **React.js| UI framework & server-side rendering |
 | **React Router DOM** | Client-side page navigation |
 | **Tailwind CSS + DaisyUI** | Styling & prebuilt UI components |
 | **Recharts** | Interactive data visualization & charts |
