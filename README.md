@@ -1,16 +1,47 @@
-# React + Vite
+Add a well-designed README.md to your GitHub repository that includes:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🤝 Friend Keeper
 
-Currently, two official plugins are available:
+> Keep your friendships alive, not just your contacts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Friend Keeper is a personal relationship management app that goes beyond storing names and numbers. It helps you **track your friendships**, **understand relationship dynamics**, and **stay intentional** about the people who matter most — all in one place.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 👥 Friend Management
+Add and organize your friends with rich profiles — notes, shared memories, important dates, and custom tags. Think of it as a personal CRM, but for friendships.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔗 Relationship Tracking
+Map out how your friends are connected to each other. Visualize your social circle, identify mutual connections, and understand the structure of your personal network.
+
+### 📊 Data Insights & Analytics
+Get meaningful insights from your social data — who you've been keeping in touch with, who you might be drifting from, interaction frequency, and more — all through clean, interactive charts.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **React.js / Next.js** | UI framework & server-side rendering |
+| **React Router DOM** | Client-side page navigation |
+| **Tailwind CSS + DaisyUI** | Styling & prebuilt UI components |
+| **Recharts** | Interactive data visualization & charts |
+
+---
+
+## 📦 Getting Started
+
+```bash
+git clone https://github.com/your-username/friend-keeper.git
+cd friend-keeper
+npm install
+npm run dev
+```
+
+---
+
+## 📄 License
+MIT

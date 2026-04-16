@@ -3,11 +3,11 @@ import logo from './assets/KeenKeeper.png';
 
 const Footer = () => {
     return (
-        <div> 
+        <div className='mt-60'> 
             <footer className=" bg-[#244D3F] text-primary-content py-5">
 
         <div className='max-w-[1200px] mx-auto '>
-          <img src={logo} className='mx-auto my-5'></img>
+          <img src={logo} className='mx-auto my-5 w-62  md:w-auto md:h-auto object-cover'></img>
     <p className="text-white text-center mb-3">
       Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
     </p>
@@ -53,9 +53,9 @@ const Footer = () => {
     
   </nav>
   <hr className="border-t border-gray-500 w-full my-2"></hr>
-  <div className='flex justify-between flex-col md:flex-row w-full text-[#FAFAFA]'>
+  <div className='flex justify-between flex-col md:flex-row w-full text-[#FAFAFA] px-3'>
     <div>
-      <p>© 2026 KeenKeeper. All rights reserved.</p>
+      <p className='text-center'>© 2026 KeenKeeper. All rights reserved.</p>
     </div>
     <div className="flex justify-center gap-3 text-sm text-white">
         <a  >Privacy Policy</a>
