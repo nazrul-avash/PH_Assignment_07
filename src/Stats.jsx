@@ -1,6 +1,6 @@
 import React, { useContext} from 'react';
 import { ActivityContext } from './ActivityContext';
-import { Cell, Pie, PieChart, Tooltip } from 'recharts';
+import { Cell, Legend, Pie, PieChart, Tooltip } from 'recharts';
 import EmptyActivity from './EmptyActivity';
 
 const Stats = () => {
@@ -37,9 +37,10 @@ const Stats = () => {
     const data = countActivity();
     return  (
         
-        <div>
-            
-       <PieChart width={600} height={600}>
+        <div className='text-5xl my-5'>
+            <h1 className='mb-5'>Friendship Analytics</h1>
+            <div className='mx-auto bg-base-100 flex justify-center items-center bg-base-100'>
+                 <PieChart width={600} height={600}>
   <Pie
     data={data}
     dataKey="value"
@@ -54,7 +55,14 @@ const Stats = () => {
     ))}
   </Pie>
   <Tooltip />
+  <Legend 
+  verticalAlign="bottom" 
+  align="center"
+  wrapperStyle={{ fontSize: "18px" }}
+/>
+
 </PieChart>
+            </div>
 
         </div>
     );

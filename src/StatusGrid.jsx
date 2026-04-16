@@ -8,16 +8,16 @@ const StatusGrid = () => {
                 <p>Total Friends</p>
             </div>
             <div className='bg-white shadow-md text-center px-15 py-12 rounded-xl'>
-                <h1 className='text-[#244D3F] font-semibold text-[32px]'>10</h1>
-                <p>Total Friends</p>
+                <h1 className='text-[#244D3F] font-semibold text-[32px]'>3</h1>
+                <p>On Track</p>
             </div>
             <div className='bg-white shadow-md text-center px-15 py-12 rounded-xl'>
-                <h1 className='text-[#244D3F] font-semibold text-[32px]'>10</h1>
-                <p>Total Friends</p>
+                <h1 className='text-[#244D3F] font-semibold text-[32px]'>6</h1>
+                <p>Need Attention</p>
             </div>
-            <div className='bg-white shadow-md text-center px-15 py-12 rounded-xl'>
-                <h1 className='text-[#244D3F] font-semibold text-[32px]'>10</h1>
-                <p>Total Friends</p>
+            <div className='bg-white shadow-md text-center px-12 py-12 rounded-xl'>
+                <h1 className='text-[#244D3F] font-semibold text-[32px]'>50</h1>
+                <p>Interactions This Month</p>
             </div>
         </div>
     );

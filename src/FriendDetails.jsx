@@ -15,7 +15,7 @@ const FriendDetails = () => {
 const {handleActivity} = useContext(ActivityContext);
 console.log(handleActivity);
     return (
-        <div className='flex gap-5 pt-20 mb-10'>
+        <div className='flex flex-col lg:flex-row gap-5 pt-20 mb-10'>
           <div className='basis-[30%]'>
               <FriendCard2 friend = {expectedfriend}></FriendCard2>
                 <button className='flex gap-1 bg-white shadow-md text-center px-4 py-4 mb-2 w-full justify-center items-center'><RiNotificationSnoozeFill /> Snooze 2 Weeks</button>

@@ -1,20 +1,20 @@
 import React from 'react';
+import logo from './assets/KeenKeeper.png';
 
 const Footer = () => {
     return (
         <div> 
-            <footer className="footer footer-horizontal footer-center bg-[#244D3F] text-primary-content p-10">
-  <aside>
-   <h1 className='text-white text-4xl font-extrabold'>KeenKeeper</h1>
-    <p className="text-white">
+            <footer className=" bg-[#244D3F] text-primary-content py-5">
+
+        <div className='max-w-[1200px] mx-auto '>
+          <img src={logo} className='mx-auto my-5'></img>
+    <p className="text-white text-center mb-3">
       Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
-      
     </p>
-   
-  </aside>
+
   <nav>
-     <h1 className='text-2xl'>Social Links</h1>
-    <div className="grid grid-flow-col gap-4">
+     <h1 className='text-2xl text-white text-center'>Social Links</h1>
+    <div className="grid grid-flow-col gap-5 justify-center mt-5">
      
       <a>
         <svg
@@ -52,17 +52,19 @@ const Footer = () => {
     </div>
     
   </nav>
-  <hr className="border-t border-gray-500 w-full"></hr>
-  <div className='flex justify-between w-full text-white'>
+  <hr className="border-t border-gray-500 w-full my-2"></hr>
+  <div className='flex justify-between flex-col md:flex-row w-full text-[#FAFAFA]'>
     <div>
       <p>© 2026 KeenKeeper. All rights reserved.</p>
     </div>
-    <div className="flex justify-center gap-6 text-sm text-gray-500">
+    <div className="flex justify-center gap-3 text-sm text-white">
         <a  >Privacy Policy</a>
         <a  >Terms of Service</a>
         <a  >Cookies</a>
     </div>
   </div>
+
+        </div>
 </footer>
         </div>
     );
