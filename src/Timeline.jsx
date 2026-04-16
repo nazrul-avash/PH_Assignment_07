@@ -8,6 +8,7 @@ import Sorting from './Sorting';
 import Filtering from './Filtering';
 import EmptyActivity from './EmptyActivity';
 import EmptyState from './EmptyState';
+import { Outlet } from 'react-router-dom';
 
 const Timeline = () => {
     const {activityItems} = useContext(ActivityContext);
@@ -38,22 +39,21 @@ const Timeline = () => {
         return <EmptyActivity></EmptyActivity>;
     }
     const filteredData = setFilteredData();
-    if(!filteredData || filteredData.length === 0){
-        return <EmptyState  title="No activity found"
-        message="Try searching or changing filters."></EmptyState>;
-    }
+   
     return (
         <div className='mt-10 mb-10'>
            <h1 className='text-4xl font-extrabold mb-4'>Timeline</h1>
            <div className='flex justify-between gap-5 items-center'>
-            <Filtering setFilter={setFilter} filter={filter}></Filtering>
+             <Filtering setFilter={setFilter} filter={filter}></Filtering>
              <SearchButton setSearchKey={setSearchKey} searchKey={searchKey}></SearchButton>
              <Sorting setSorting={setSorting} sorting={sorting} ></Sorting>
            </div>
-            <div className='mb-10'></div>
-            {
-                filteredData.map((item)=><ActivityCard item={item}></ActivityCard>)
-            }
+            <div className='mb-10 pt-10'>
+                <Outlet context={{filteredData}}></Outlet>
+             
+            
+            </div>
+            
         </div>
     );
 };

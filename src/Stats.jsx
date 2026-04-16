@@ -39,8 +39,10 @@ const Stats = () => {
         
         <div className='text-5xl my-5'>
             <h1 className='mb-5'>Friendship Analytics</h1>
-            <div className='mx-auto bg-base-100 flex justify-center items-center bg-base-100'>
-                 <PieChart width={600} height={600}>
+            <div className='mx-auto bg-base-100  bg-base-100'>
+                <h1 className='text-left p-10 text-2xl'>By Interaction Type</h1>
+                 <div className='flex justify-center items-center'>
+                    <PieChart width={400} height={400}>
   <Pie
     data={data}
     dataKey="value"
@@ -62,6 +64,7 @@ const Stats = () => {
 />
 
 </PieChart>
+                 </div>
             </div>
 
         </div>

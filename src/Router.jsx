@@ -5,6 +5,8 @@ import Stats from "./Stats";
 import FriendDetails from "./FriendDetails";
 import ErrorPage from "./ErrorPage";
 import CenterWindow from "./CenterWindow";
+import { Activity } from "react";
+import ActivityArea from "./ActivityArea";
 
 export const router = createBrowserRouter([
     {
@@ -17,7 +19,12 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/timeline",
-                element:<Timeline></Timeline>
+                element:<Timeline></Timeline>,
+                children:[{
+                    index:true,
+                    element:<ActivityArea></ActivityArea>
+                }]
+                
             },
             {
                 path:"/stats",
