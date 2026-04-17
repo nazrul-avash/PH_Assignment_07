@@ -37,33 +37,36 @@ const Stats = () => {
     const data = countActivity();
     return  (
         
-        <div className='text-5xl my-5'>
+        <div className='text-5xl my-5 overflow-visible'>
             <h1 className='mb-5'>Friendship Analytics</h1>
-            <div className='mx-auto bg-base-100  bg-base-100'>
+            <div className='mx-auto bg-base-100 '>
                 <h1 className='text-left p-10 text-2xl'>By Interaction Type</h1>
-                 <div className='flex justify-center items-center'>
-                    <PieChart width={400} height={400}>
-  <Pie
-    data={data}
-    dataKey="value"
-    nameKey="name"
-    cx="50%"
-    cy="50%"
-    outerRadius={100}
-    fill="#8884d8"
-    label={({ value }) => value}
-    
-  >
-    {data.map((entry, index) => (
-      <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-    ))}
-  </Pie>
-  <Tooltip />
-  <Legend 
-  verticalAlign="bottom" 
-  align="center"
-  wrapperStyle={{ fontSize: "18px" }}
-/>
+                 <div className='flex justify-center items-center '>
+                 <PieChart width={550} height={550}>
+                    <Pie
+                        data={data}
+                        dataKey="value"
+                        nameKey="name"
+                       
+                        cx="50%"
+                        cy="45%"
+                        outerRadius={150}
+                        fill="#8884d8"
+                    
+                        
+                    >
+                        {data.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                        ))}
+                    </Pie>
+                    <Tooltip />
+                    <Legend 
+                    verticalAlign="bottom" 
+                    align="center"
+                    formatter={(value, entry) => `${value} (${entry.payload.value})`}
+                    wrapperStyle={{ fontSize: "18px", marginBottom:"25px"
+                     }}
+                    />
 
 </PieChart>
                  </div>
