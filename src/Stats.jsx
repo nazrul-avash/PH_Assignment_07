@@ -37,12 +37,12 @@ const Stats = () => {
     const data = countActivity();
     return  (
         
-        <div className='text-5xl my-5 overflow-visible'>
+        <div className='text-5xl my-5 '>
             <h1 className='mb-5'>Friendship Analytics</h1>
             <div className='mx-auto bg-base-100 '>
                 <h1 className='text-left p-10 text-2xl'>By Interaction Type</h1>
                  <div className='flex justify-center items-center '>
-                 <PieChart width={550} height={550}>
+                 <PieChart width={500} height={500}>
                     <Pie
                         data={data}
                         dataKey="value"
@@ -64,7 +64,7 @@ const Stats = () => {
                     verticalAlign="bottom" 
                     align="center"
                     formatter={(value, entry) => `${value} (${entry.payload.value})`}
-                    wrapperStyle={{ fontSize: "18px", marginBottom:"25px"
+                    wrapperStyle={{ fontSize: "18px", marginBottom:"25px", paddingRight:"70px"
                      }}
                     />
 

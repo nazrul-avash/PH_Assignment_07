@@ -11,9 +11,9 @@ const ActivityCard = ({item}) => {
         
     return (
        
-        <div className='bg-white shadow-md text-center px-15 py-4 rounded-xl mb-10'>
+        <div className='bg-white shadow-md text-center px-15 py-4 rounded-xl mb-10  mx-auto'>
                
-                  <div className='flex items-center gap-5'>
+                  <div className='flex items-center gap-3 '>
                     <div><img src={imageSrc[item.activityType]}></img></div>
                     <div>
                     <h1 className='text-[#244D3F] font-semibold text-[20px]'>{`${item.activityType} with ${item.name} `}</h1>

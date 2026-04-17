@@ -10,7 +10,7 @@ const ActivityArea = () => {
         message="Try searching or changing filters."></EmptyState>;
     }
     return (
-        <div>
+        <div className='bg-base-200 shadow p-2 rounded-2xl py-3'>
              {
                 filteredData.map((item)=><ActivityCard item={item}></ActivityCard>)
             }

@@ -31,7 +31,7 @@ const FriendCard2 = ({friend}) => {
     <div>
       <p className={`badge rounded-2xl p-4 text-white ${colorDefiner(friend.status)}`}>{friend.status}</p>
       <p className='text-gray-500'>{friend.bio}</p>
-      <p className='text-gray-500'>perfered:email</p>
+      <p className='text-gray-500'>perfered:{friend.email}</p>
     </div>
   </div>
 

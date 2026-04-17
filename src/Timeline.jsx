@@ -42,7 +42,7 @@ const Timeline = () => {
    
     return (
         <div className='mt-10 mb-10'>
-           <h1 className='text-4xl font-extrabold mb-4'>Timeline</h1>
+           <h1 className='text-4xl font-extrabold mb-4 px-3'>Timeline</h1>
            <div className='flex justify-between gap-5 items-center'>
              <Filtering setFilter={setFilter} filter={filter}></Filtering>
              <SearchButton setSearchKey={setSearchKey} searchKey={searchKey}></SearchButton>
